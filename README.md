@@ -103,7 +103,7 @@
 
 ​	打开Qtdesigner开始制作我们想要的图形界面，第一步先设置一个标签，显示为手机型号。第二步设置一个下拉菜单框，将其类型名称改为mobileComboBox，设置我们想要分析的手机型号。第三步，设置四个按钮，分别设置其名称为数据采集，数据分析，清空文本，清空文件，类型名称为analysisBtn，dataBtn，clearBtn，clearBtn2。
 
-![图片6.png](https://upload-images.jianshu.io/upload_images/5498924-55631f2649c6e56a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图11.png](https://upload-images.jianshu.io/upload_images/5498924-7ef058e3170faa99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 图：界面布局
 
@@ -130,6 +130,6 @@
 ## 总结
 ​	通过这次的项目设计，我更加了解了Python这门语言的强大，也熟悉了很多之前没有接触的第三方库。虽然在编写程序中出现了很多的问题，但我还是耐心的将其一一解决，这不仅锻炼了我的耐力，而且通过逻辑设计锻炼了我理性思维，通过不断地敲击代码锻炼了我的编程思维。基于Python的手机评论分析这个项目是我在之前的有关vivo_x23的八千条数据分析项目的再次升级，我相信在以后我会继续完善这个项目，使其变成包含所有的手机型号分析软件，或许在以后还将拓展到其他相关领域而不仅仅局限于对手机的分析。
 
-![图片9.png](https://upload-images.jianshu.io/upload_images/5498924-4ca136d346a95605.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图12.png](https://upload-images.jianshu.io/upload_images/5498924-d417cfbd1d8c2fbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 图：界面运行结果
