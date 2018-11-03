@@ -26,12 +26,15 @@
 ​	接着上一步的操作打开链接查看确实有相关的评论信息，复制其url链接进行整合，最终得到淘宝采集的url链接，接着我们依次把多家店铺的url评论链接采集下来。类似京东的url链接也是如此操作。以及vivo官网的url链接也是如此操作，只不过类型为xhr。
 
 ![淘宝json链接](https://upload-images.jianshu.io/upload_images/5498924-fc05251cee3984a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：淘宝json链接
 
 ![京东json链接](https://upload-images.jianshu.io/upload_images/5498924-a2d138d9b529262f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：京东json链接
 
 ![vivo官网商城xhr链接](https://upload-images.jianshu.io/upload_images/5498924-62b05c36aa2040cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：vivo官网商城xhr链接
 
 ### 2.url请求
@@ -65,6 +68,7 @@
 ​	得到的评论文本文件中含有空格和未作评论的信息，首先创建另一个文本文件，在进行写操作中对每一行进行清洗和替换，得到最终想要的评论文本文件。
 
 ![图片4.png](https://upload-images.jianshu.io/upload_images/5498924-3c84e22f69e87c1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：部分评论图
 
 ## 数据分析
@@ -90,6 +94,7 @@
 调用Matplotlib库的subplot2grid方法创建一个四乘以四的布局，规划词云图占二乘以四的大小，情感系数分析图忽然评论分布图分别占用二乘以二的页面布局。设置全局显示字体和大小参数。matplotlib.rcParams['font.family']='YouYuan'，matplotlib.rcParams['font.size']=10。
 
 ![图片5.png](https://upload-images.jianshu.io/upload_images/5498924-c870f68c8f973107.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：数据分析展示
 
 ## 界面设计
@@ -99,6 +104,7 @@
 ​	打开Qtdesigner开始制作我们想要的图形界面，第一步先设置一个标签，显示为手机型号。第二步设置一个下拉菜单框，将其类型名称改为mobileComboBox，设置我们想要分析的手机型号。第三步，设置四个按钮，分别设置其名称为数据采集，数据分析，清空文本，清空文件，类型名称为analysisBtn，dataBtn，clearBtn，clearBtn2。
 
 ![图片6.png](https://upload-images.jianshu.io/upload_images/5498924-55631f2649c6e56a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：界面布局
 
 ### 2.界面按钮槽信号
@@ -106,6 +112,7 @@
 ​	对四个按钮分别设置槽信号clicked和其对应的函数，通过对对象函数的操控，可以触发函数所对应的内容。
 
 ![图片7.png](https://upload-images.jianshu.io/upload_images/5498924-604c396986da56ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：界面槽函数
 
 ### 3.界面保存并转化
@@ -117,10 +124,12 @@
 ​	新建一个Mobile_phone_analysis.py文件，将所有的手机型号的数据采集与数据分析全部导入进来，并将界面设计的文件也导入进来。分别编写data，data_analysis，clearFile，clearResult槽函数。下拉菜单框将获得手机型号，获得手机型号之后先进行相对应的文件存在判断，如果不存在则开始采集，如果存在请清空文件。之后判断文件若已采集则开始数据分析，若没有数据采集的文件则请求数据分析。最终完成了整个软件的设计与编程。
 
 ![图片8.png](https://upload-images.jianshu.io/upload_images/5498924-3af83bde666816ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：文件结构图
 
 ## 总结
 ​	通过这次的项目设计，我更加了解了Python这门语言的强大，也熟悉了很多之前没有接触的第三方库。虽然在编写程序中出现了很多的问题，但我还是耐心的将其一一解决，这不仅锻炼了我的耐力，而且通过逻辑设计锻炼了我理性思维，通过不断地敲击代码锻炼了我的编程思维。基于Python的手机评论分析这个项目是我在之前的有关vivo_x23的八千条数据分析项目的再次升级，我相信在以后我会继续完善这个项目，使其变成包含所有的手机型号分析软件，或许在以后还将拓展到其他相关领域而不仅仅局限于对手机的分析。
 
 ![图片9.png](https://upload-images.jianshu.io/upload_images/5498924-4ca136d346a95605.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 图：界面运行结果
